@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
+	<head>  
+		<title>FileUpload</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/pnotify.custom.min.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="js/jquery.json.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/jquery.dcjqaccordion.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/pnotify.custom.min.js"></script>
+        <script src="common/md5.js"></script>
+		<script src="common/uploader.js"></script>
+        <script src="common/file.js"></script>
+
+        <style type="text/css">
+			.bar {  
+				width: 300px;  
+			}  
+			#progress {  
+				background: #eee;  
+				border: 1px solid #222;  
+				margin-top: 20px;  
+			}  
+			#progressbar {  
+				width: 0px;  
+				height: 24px;  
+				background: #333;  
+			}  
+		</style>  
+	</head>  
+
+    <body>
+    <div style="margin:50px auto;">
+        <div>
+            <h1>video upload</h1>
+            <br/>
+        </div>
+        <div style="float:left">
+            <form id="upload" name="upload" enctype="multipart/form-data" action="" method="post" >
+                <input type="hidden" name="upload_id" id="upload_id" value="">
+                <input type="hidden" name="MAX_FILE_SIZE" value="30000000"  />
+                <input type="file"   name="file" id="input_file" label="fileupload" onchange="File.Upload.execute();" />
+                <input type="submit" value="Send File" id="submit_upload" />
+            </form>
+        </div>
+        <br/>
+        <div class="form-group" id="UploadBox"></div>
+
+    </div>
+    </body>
+</html>  
+
+
