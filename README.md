@@ -1,10 +1,10 @@
-This JavaScript plug-in will help you achieve to upload file. 
+This JavaScript plug-in will help you achieve to upload file by HTTP request. Furthermore, it support for resuming upload at breakpoint, rendering progress bar for upload progress.
 
 ### Prerequisites
-1. Nginx is essential, you must install nginx with two module : `nginx-upload-module-2.2` and `nginx-upload-progress-module-0.9.1`, then modify the nginx.conf.
+1. Nginx is essential, you must install nginx with two module : `nginx-upload-module-2.2` and `nginx-upload-progress-module-0.9.1`, then modify the `nginx.conf`.
    A website is viewable online to help you install nginx: [https://www.nginx.com/resources/wiki/start/topics/tutorials/install/](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
-2. You also need a interface for obtaining the upload server address.
-3. If necessary, you can provide other two interface for data processing (or something else) before upload and when upload complete.
+2. You also need a interface for obtaining the uploading service address.
+3. If necessary, you can provide other two interface for data processing (or something else) before uploading and when uploading complete.
 
 ### Quick Start
 * Configure the nginx server
